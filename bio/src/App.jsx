@@ -1,62 +1,15 @@
-import "./App.css";
-function Introduction (props) {
-  return (
-    <div>
-      <h2>{props.name}</h2>
-      <p>{props.bio}.</p>
-    </div>
-  );
-}
-
-function Skills (props) {
+function App() {
   return(
-    <div>
-      <h2>{props.title}</h2>
-      <p>{props.skills}</p>
-    </div>
+    <div className="min-h-screen bg-gray-100 p-8">
+      <div className="mx-automax-w-md rounded-x1 bg-white p-6 shadow-1g">
+        <h1 className="text-2x1 font-bold text-blue-600">
+          My React App
+        </h1>
+        <p className="mt-3 text-gray-600">
+          Today we're learning Tailwindcss
+        </p>
+      </div>
+       </div>
   )
 }
-
-function Contact (props) {
-return(
-  <div>
-    <h2>My contact information</h2>
-    <p>Phone: {props.phone}</p>
-  </div>
-)
-
-}
-function App() {
-  const name = "Joy";
-  return(
-    <div>
-      <h1>My Bio Page</h1>
-<Introduction
-name="Joy"
-bio="I am learning React"
-/>
-
-<Introduction
-name="Mutia"
-bio="I enjoy learning React"
-/>
-
-<h2>My Skills</h2>
-<Skills
-title="Frontend Skills"
-skills="HTML,Javascript,CSS"
-/>
-<Skills
-    
-      title="Other skills that I am learning"
-      skills="Git,firebase"
- />
-<Contact
-phone="+254792627098"
-/>
-    </div>
-
-  );
-}
-
 export default App;
